@@ -9,6 +9,25 @@
     usage example var wolverine = new SuperHero('x-men', 'Logan', 45, 4);
 * */
 
-const SuperHero = null;
+function SuperHero(team, name, power, exp) {
+  this.team = team;
+  this.power = power;
+  this.exp = exp;
+  this.name = name;
+}
+
+
+SuperHero.prototype = {
+  constructor: SuperHero,
+  greet: function() {
+    return `hello there! my name is ${this.name}, and I am ${this.team}'s team member.`;
+  },
+  kickAsses: function() {
+    return `I kick asses with power ${this.power}.`;
+  },
+  manageTheTeam: function() {
+    return `I manage ${this.team} team, with experience ${this.exp}.`;
+  }
+};
 
 module.exports = SuperHero;
