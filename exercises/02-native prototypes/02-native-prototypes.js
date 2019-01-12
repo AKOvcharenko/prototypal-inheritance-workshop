@@ -1,5 +1,5 @@
 /**
- * TODO: object's method toString should returns `Big Brother watching You! ${previous result}`
+ * TODO: object's method toString should returns `Big Brother watching You! ${default method result}`
  */
 module.exports = Object;
 
