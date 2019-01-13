@@ -11,7 +11,18 @@
 
 const SuperHero = require('../03-super-hero/03-super-hero');
 
-const Wuss = null;
+function Wuss(team, name, power, exp) {
+  SuperHero.apply(this, arguments);
+}
+
+Wuss.prototype = Object.create(SuperHero.prototype);
+Object.assign(Wuss.prototype, {
+    constructor: Wuss,
+    kickAsses: function() {
+      return `I can not kick asses :C my power is ${this.power}.`;
+    }
+  }
+);
 
 module.exports = Wuss;
 
