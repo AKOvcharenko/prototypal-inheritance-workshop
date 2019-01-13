@@ -11,6 +11,17 @@
 
 const SuperHero = require('../03-super-hero/03-super-hero');
 
-var Berserker = null;
+function Berserker(team, name, power, exp) {
+  SuperHero.apply(this, arguments);
+}
+
+Berserker.prototype = Object.create(SuperHero.prototype);
+Object.assign(Berserker.prototype, {
+    constructor: Berserker,
+    manageTheTeam: function() {
+      return `I can not manage team, I am too strong for this, my power is ${this.power}.`;
+    }
+  }
+);
 
 module.exports = Berserker;
