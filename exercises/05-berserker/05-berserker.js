@@ -4,7 +4,7 @@
 * TODO 2. Berserker Class instance should inherits SuperHero Class, and should has methods:
     - greet: returns string - hello there! my name is `name`, and I am `team`'s team member.
     - kickAsses: returns string - I kick asses with power `power`.
-    - manageTheTeam: returns string - I can not manage team, I am too strong for this, my power `power`.
+    - manageTheTeam: returns string - I can not manage team, I am too strong for this, my power is `power`.
 
     usage example var hulk = new Berserker('avengers', 'Hulk', 1000, 1);
 * */
