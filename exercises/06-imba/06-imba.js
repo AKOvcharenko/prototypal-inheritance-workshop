@@ -12,6 +12,17 @@
 
 const SuperHero = require('../03-super-hero/03-super-hero');
 
-var Imba = null;
+function Imba(team, name, power, exp) {
+  SuperHero.apply(this, arguments);
+}
+
+Imba.prototype = Object.create(SuperHero.prototype);
+Object.assign(Imba.prototype, {
+    constructor: Imba,
+    doAnything: function() {
+      return 'I can do anything, because I am imba.';
+    }
+  }
+);
 
 module.exports = Imba;
