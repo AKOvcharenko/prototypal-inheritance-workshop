@@ -19,7 +19,7 @@ Wuss.prototype = Object.create(SuperHero.prototype);
 Object.assign(Wuss.prototype, {
     constructor: Wuss,
     kickAsses: function() {
-      return `I can not kick asses :C my power is ${this.power}.`;
+      return `I can not kick asses :'( my power is ${this.power}.`;
     }
   }
 );
