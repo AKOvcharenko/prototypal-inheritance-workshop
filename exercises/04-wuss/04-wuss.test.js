@@ -44,7 +44,7 @@ describe('Wuss', () => {
   });
 
   it('kickAsses should returns', () => {
-    expect(xavier.kickAsses()).toBe('I can not kick asses :C my power is 3.');
+    expect(xavier.kickAsses()).toBe('I can not kick asses :\'( my power is 3.');
   });
 
   it('created instance should has method manageTheTeam', () => {
